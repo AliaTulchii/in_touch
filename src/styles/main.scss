@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&family=Roboto+Slab:wght@100..900&display=swap');
+
+
+
+/* Base */
+@import "./base/reset";
+@import "./base/vars";
+@import "./base/mixins";
+@import "./base/base";
+@import "./base/utils";
+@import "./base/containers";
+
+
+/*Components*/
+@import "./components/logo";
+@import "./components/header";
+@import "./components/nav";
+@import "./components/start";
+@import "./components/content";
+
+

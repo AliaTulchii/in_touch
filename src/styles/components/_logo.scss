@@ -1,0 +1,19 @@
+.logo{
+    display: flex;
+    padding: 0 10px;
+    align-items: baseline;
+    background-color: var(--cream);
+    border-radius: 8px;
+}
+
+.logo__text{
+    font-family: var(--font-main);
+    font-size: 52px;
+    font-weight: 500;
+    color: var(--lavanda);
+}
+
+.logo__img{
+    width: 32px;
+    height: 32px;
+}

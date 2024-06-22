@@ -1,0 +1,22 @@
+.nav{
+    padding: 30px ;
+    grid-area: nav;
+    height: 100vh;
+    background-color: var(--lavanda);
+    color: var(--cream);
+}
+
+.nav__list{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.nav__item{
+cursor: pointer;
+}
+
+.nav__link{
+    font-size: 20px;
+
+}
