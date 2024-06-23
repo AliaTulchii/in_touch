@@ -1,5 +1,3 @@
-import React from 'react'
-import lavanda from '../../img/lavanda.jpg'
 import hinata from '../../img/hinata.jpg'
 import MyPosts from '../MyPosts/MyPosts'
 

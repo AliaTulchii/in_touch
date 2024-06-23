@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../../img/header/intouch.png'
+import logo from '../../img/header/logo.png'
 import '../../styles/components/_logo.scss'
 import '../../styles/components/_header.scss'
 import '../../styles/base/_containers.scss'
