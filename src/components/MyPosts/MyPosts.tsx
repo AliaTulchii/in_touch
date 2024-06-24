@@ -12,7 +12,8 @@ const MyPosts = () => {
          
           <Button text={'Send'} />
           
-          <Post/>
+          <Post message={'Hello my friends today was an amazing day!'} />
+          <Post message={'This is my first post'}/>
       </div>
   )
 }

@@ -2,12 +2,17 @@ import hinata from '../../img/hinata.jpg'
 import Like from '../Button/Like'
 import '../../styles/components/_post.scss'
 
-const Post = () => {
+
+interface PostProps {
+  message: string;
+}
+
+const Post: React.FC<PostProps> = ({message}) => {
   return (
     <div className='post'>
       <div className='post__content'>
         <img src={hinata} alt="hinata" className='post__img'/>
-          <p className='post__text'>Hello sweetie </p>
+          <p className='post__text'>{message} </p>
       </div>
         
           <Like/>

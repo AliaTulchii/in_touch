@@ -1,10 +1,10 @@
 import hinata from '../../img/hinata.jpg'
-import MyPosts from '../MyPosts/MyPosts'
+import MyPosts from '../../components/MyPosts/MyPosts'
 
 
 const Profile = () => {
   return (
-    <div className='content'>
+    <div>
       <div className='content__baner'>
         {/* <img src={lavanda} alt="lavanda" className='content__baner-img'/> */}
       </div>

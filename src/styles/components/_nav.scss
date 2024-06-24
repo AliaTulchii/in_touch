@@ -1,9 +1,13 @@
 .nav{
-    padding: 30px ;
+    padding: 20px 10px ;
     grid-area: nav;
     height: 100vh;
-    background-color: var(--lavanda);
-    color: var(--cream);
+    display: flex;
+    flex-direction: column;
+    background-color: var(--light-lavanda);
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
 }
 
 .nav__list{
@@ -13,7 +17,24 @@
 }
 
 .nav__item{
+    position: relative;
 cursor: pointer;
+padding: 8px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+border-radius: 6px;
+transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+
+&.active {
+    background-image: linear-gradient(to top right, #c984fe, #f5ebff); 
+    color: #ae27ed; 
+  }
+
+  &:not(.active):hover {
+    background-color: #f7ebff; 
+    color: #4a5568; 
+  }
 }
 
 .nav__link{
