@@ -1,4 +1,8 @@
-import { Link, useLocation } from "react-router-dom"
+import { NavLink, useLocation } from "react-router-dom"
+import { LuHome, LuMessagesSquare, LuNewspaper   } from "react-icons/lu";
+import { IoSettingsOutline } from "react-icons/io5";
+
+
 
 const Nav = () => {
   const location = useLocation()
@@ -8,17 +12,20 @@ const Nav = () => {
     <div className='nav'>
           <ul className='nav__list'>
         <li className={`nav__item ${location.pathname === '/profile' ? 'active' : ''}`}>
-                  
-                  <Link to="/profile" className='nav__link'>Profile</Link>
+        <LuHome />
+                  <NavLink to="/profile" className='nav__link'>Home</NavLink>
               </li>
               <li className={`nav__item ${location.pathname === '/dialogs' ? 'active' : ''}`}>
-                  <Link to="/dialogs" className='nav__link'>Messages</Link>
+              <LuMessagesSquare  />
+          <NavLink to="/dialogs" className='nav__link'>Messages</NavLink>
               </li>
               <li className={`nav__item ${location.pathname === '/news' ? 'active' : ''}`}>
-                  <Link to="/news" className='nav__link'>News</Link>
+                  <LuNewspaper />
+          <NavLink to="/news" className='nav__link'>News</NavLink>
               </li>
               <li className={`nav__item ${location.pathname === '/settings' ? 'active' : ''}`}>
-                  <Link to="/settings" className='nav__link'>Settings</Link>
+                  <IoSettingsOutline/>
+          <NavLink to="/settings" className='nav__link'>Settings</NavLink>
               </li>
       </ul>
     </div>

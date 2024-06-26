@@ -3,6 +3,10 @@ import '../../styles/components/_posts.scss'
 import Button from '../Button/Button'
 
 const MyPosts = () => {
+  let messagesData = [
+    { message: 'Hello my friends today was an amazing day!' },
+    { message: 'This is my first post'},
+  ]
   return (
     <div className='posts'>
         <h2 className='posts__title'>My posts</h2>
@@ -12,8 +16,10 @@ const MyPosts = () => {
          
           <Button text={'Send'} />
           
-          <Post message={'Hello my friends today was an amazing day!'} />
-          <Post message={'This is my first post'}/>
+      {messagesData.map((message, index) => (
+        <Post key={index} message={message.message} />
+      ))}
+          
       </div>
   )
 }
